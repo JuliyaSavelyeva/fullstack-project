@@ -7,7 +7,7 @@
 
 /* base */
 body {
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
 }
 
 ul {
@@ -30,7 +30,7 @@ ul {
 
 /* link */
 .link {
-  color: var(--color-primary-light);;
+  color: var(--color-primary-light);
 }
 
 .link:hover {
@@ -39,7 +39,7 @@ ul {
 
 /* hero */
 .hero-title {
-  color: var(--color-primary-light);;
+  color: var(--color-primary-light);
 }
 
 .hero-title .accent {
@@ -48,7 +48,7 @@ ul {
 
 /* advantages-section */
 .advantages-list {
-  color: var(--color-primary-light);;
+  color: var(--color-primary-light);
   background-color: var(--color-brand-light);
 }
 
