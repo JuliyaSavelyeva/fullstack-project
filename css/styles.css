@@ -37,7 +37,12 @@
 }
 
 /* base */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   color: var(--color-primary-dark);
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -45,8 +50,34 @@ body {
   line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* specific */
@@ -69,6 +100,7 @@ ul {
 
 /* button */
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: var(--semi-bold);
   background-color: var(--color-brand-light);
@@ -90,11 +122,37 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1; 
+  align-items: center;
+  gap: 64px;
+  justify-content: center;
 }
 
 /* hero */
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-weight: 900;
@@ -113,21 +171,77 @@ ul {
 }
 
 /* advantages-section */
-.advantages-list {
-  color: var(--color-primary-light);
+
+.advantages-section {
   background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
 
+/* traditions-section */
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-title {
+  padding-bottom: 42px;
+}
+
+.limited {
+  max-width: 368px;
+}
+
 /* cookers-section */
 
+.cookers-main-title {
+  margin-bottom: 80px;
+}
+
 .cookers-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: var(--semi-bold);
 }
 
 /* formats-section */
+
+.formats-main-title {
+  margin-bottom: 80px;
+}
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.formats-card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid red; /* remove */
+}
 
 .formats-title {
   font-size: 24px;
@@ -138,6 +252,12 @@ ul {
   color: var(--color-primary-light);
   font-size: 14px;
   font-weight: 300;
+}
+
+/* contacts-section */
+
+.contacts-title {
+  margin-bottom: 16px;
 }
 
 /* footer */
