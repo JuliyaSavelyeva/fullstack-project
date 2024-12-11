@@ -32,6 +32,8 @@
   --color-brand-dark: #465929;
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261A;
+  --color-secondary-dark: #A28268;
+  --color-primary-middle: #cfcfbc;
 
   --semi-bold: 600;
 }
@@ -43,6 +45,7 @@
 
 body {
   margin: 0;
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -150,6 +153,10 @@ ul {
 /* hero */
 .hero-section {
   padding: 272px 0;
+  background-image: url('../images/hero-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 0;
@@ -212,7 +219,21 @@ ul {
 /* cookers-section */
 
 .cookers-main-title {
-  margin-bottom: 80px;
+  max-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.cookers-main-title::before,
+.cookers-main-title::after {
+  content: '';
+  width: 352px;
+  display: block;
+  border: 2px solid var(--color-primary-middle);
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .cookers-title {
@@ -225,6 +246,7 @@ ul {
 
 .formats-main-title {
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .formats-list {
@@ -239,6 +261,8 @@ ul {
 
 .formats-card {
   padding: 24px;
+  height: 444px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
   border-radius: 16px;
   border: 1px solid red; /* remove */
 }
@@ -254,6 +278,26 @@ ul {
   font-weight: 300;
 }
 
+/* carousel-btn */
+.carousel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* contacts-section */
 
 .contacts-title {
@@ -261,6 +305,14 @@ ul {
 }
 
 /* footer */
+
+.footer {
+  background-image: url('../images/footer-background.png');
+  background-color: var(--color-primary-dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .address-link {
   color: var(--color-primary-light);
@@ -272,7 +324,14 @@ ul {
 
 .address-link:hover {
   color: var(--color-brand-light);
-  font-weight: 400;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-light);
 }
 
 .address-copyright {
