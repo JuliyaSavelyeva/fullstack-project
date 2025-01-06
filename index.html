@@ -195,7 +195,51 @@
               <p class="accent-dark">
                 Fill out the form so we can contact you!
               </p>
-              <!-- Form -->
+              <form name="contacts-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="uer-name">
+                    Name
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="uer-name"
+                    name="uer-name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel">
+                    Phone
+                  </label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email">
+                    Email
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Email"
+                  />
+                </div>
+                <button type="submit" class="button form-button">
+                  Order a call
+                </button>
+                <p class="form-terms">
+                  By clicking the button, I agree to
+                  <a class="form-terms-link" href="#">the privacy policy</a>
+                </p>
+              </form>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036099!2d30.488698375953092!3d50.456680986915906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1732383863583!5m2!1sru!2sua"
@@ -276,6 +320,51 @@
     <div class="backdrop js-hidden">
       <div class="modal">
         <button type="button" class="modal-btn-close">close</button>
+        <h2>Order a call</h2>
+        <p>Leave a request and our specialist will contact you!</p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="uer-name">
+              Name
+            </label>
+            <input
+              class="form-input"
+              type="text"
+              id="uer-name"
+              name="uer-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">
+              Phone
+            </label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Phone"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">
+              Email
+            </label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Email"
+            />
+          </div>
+          <button type="submit" class="button form-button">Order a call</button>
+          <p class="form-terms">
+            By clicking the button, I agree to
+            <a class="form-terms-link" href="#">the privacy policy</a>
+          </p>
+        </form>
       </div>
     </div>
 
