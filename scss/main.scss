@@ -1,0 +1,59 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+@import './utils/mixins';
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* specific */
+
+.accent-light {
+  color: var(--color-brand-light);
+}
+
+.accent-dark {
+  color: var(--color-brand-dark);
+}
+
+.semi-bold {
+  font-weight: var(--semi-bold);
+}
+
+@import './components/buttons';
+@import './components/links';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/advantages-section';
+@import './layouts/transitions-section.scss';
+@import './layouts/chefs-section';
+@import './layouts/formats-section';
+@import './components/carousel';
+@import './layouts/contacts-section';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/form';
+
+/* section */
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.limited {
+  max-width: 368px;
+}
