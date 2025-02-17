@@ -39,15 +39,15 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent-light">Modern</span> bakery
+          <h1 class="hero-section__title">
+            <span class="accent-brand-light">Modern</span> bakery
           </h1>
         </div>
       </section>
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
-          <ul class="advantages-list">
+          <ul class="advantages-section__list">
             <li>Great demand on the market</li>
             <li>Budget-friendly formats</li>
             <li>Experienced management team</li>
@@ -56,21 +56,23 @@
       </section>
       <section class="section traditions-section" id="traditions-section">
         <div class="container">
-          <div class="traditions-container">
-            <div class="traditions-content">
-              <h2 class="traditions-title section-title">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="traditions-section__title section__title">
                 A new format of traditions
               </h2>
               <p>
-                <span class="text-uppercase accent-light semi-bold">
+                <span class="text-uppercase accent-brand-light semi-bold">
                   Shop bakery</span
                 >
                 - is a bakery that took all the best and preserved the taste of
                 traditional baking and the naturalness of the ingredients.
               </p>
-              <p class="limited">
+              <p
+                class="traditions-section__text traditions-section__text--limited"
+              >
                 We work as the most famous networks —
-                <span class="accent-light">
+                <span class="accent-brand-light semi-bold">
                   5 minutes and the order is ready</span
                 >. And our bakeries have a stylish design and high quality
                 service!
@@ -80,67 +82,67 @@
           </div>
         </div>
       </section>
-      <section class="section" id="chefs-section">
+      <section class="section chefs-section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-main-title section-title">
-            Our best <span class="accent-dark">chefs</span>
+          <h2 class="chefs-section__main-title section__title">
+            Our best <span class="accent-brand-dark">chefs</span>
           </h2>
-          <ul class="chefs-list">
-            <li class="chefs-item">
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-photo"
+                  class="chef-card__photo"
                   src="./images/sara-chef.jpg"
                   alt="sara"
                 />
                 <div>
-                  <h3 class="chefs-title">Sara</h3>
-                  <div class="chef-text">
-                    <p>Hello, I'm Sara</p>
-                    <p>
-                      For 10 years, I've been lighting interesting and tasty
-                      ideas in life.
-                    </p>
-                    <p>I will bake for you the most delicious products!</p>
-                  </div>
+                  <h3 class="chef-card__title">Sara</h3>
+                  <p class="chef-card__text">Hello, I'm Sara</p>
+                  <p class="chef-card__text">
+                    For 10 years, I've been lighting interesting and tasty ideas
+                    in life.
+                  </p>
+                  <p class="chef-card__text">
+                    I will bake for you the most delicious products!
+                  </p>
                 </div>
               </article>
             </li>
-            <li class="chefs-item">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-photo"
+                  class="chef-card__photo"
                   src="./images/jhon-chef.jpg"
                   alt="jhon"
                 />
                 <div>
-                  <h3 class="chefs-title">Jhon</h3>
-                  <div class="chef-text">
-                    <p>Hello, I'm Jhon!</p>
-                    <p>
-                      I have 18 years of coding experience. SHOP BEKERY is our
-                      love, which we share with you every time through our
-                      pastries!
-                    </p>
-                    <p>I will make a unique filling for you for any taste!</p>
-                  </div>
+                  <h3 class="chef-card__title">Jhon</h3>
+                  <p class="chef-card__text">Hello, I'm Jhon!</p>
+                  <p class="chef-card__text">
+                    I have 18 years of coding experience. SHOP BEKERY is our
+                    love, which we share with you every time through our
+                    pastries!
+                  </p>
+                  <p class="chef-card__text">
+                    I will make a unique filling for you for any taste!
+                  </p>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section" id="formats-section">
+      <section class="section formats-section" id="formats-section">
         <div class="container">
-          <h2 class="formats-main-title section-title">Formats</h2>
-          <div class="formats-container">
+          <h2 class="formats-section__main-title section-title">Formats</h2>
+          <div class="formats-section__container">
             <button type="button" class="carousel-btn">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="formats-list">
-              <li class="formats-item">
+            <ul class="formats-section__list">
+              <li class="formats-section__item">
                 <article class="formats-card">
                   <img
                     class="formats-image"
@@ -159,7 +161,7 @@
                   </div>
                 </article>
               </li>
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="formats-card">
                   <img
                     class="formats-image"
@@ -175,7 +177,7 @@
                   </div>
                 </article>
               </li>
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="formats-card">
                   <img
                     class="formats-image"
@@ -207,7 +209,7 @@
               <h2 class="contacts-title section-title">
                 Join the network of bakeries
               </h2>
-              <p class="accent-dark">
+              <p class="accent-brand-dark">
                 Fill out the form so we can contact you!
               </p>
               <form name="contacts-form" autocomplete="off">

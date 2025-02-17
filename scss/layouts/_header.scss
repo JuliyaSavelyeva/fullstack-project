@@ -4,25 +4,25 @@
   top: 0;
   right: 0;
   padding-top: 32px;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-.header__nav {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-.header__menu {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  gap: 64px;
-  justify-content: center;
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 64px;
+    justify-content: center;
+  }
 }
