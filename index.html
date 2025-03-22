@@ -145,12 +145,12 @@
               <li class="formats-section__item">
                 <article class="formats-card">
                   <img
-                    class="formats-image"
+                    class="formats-card__image"
                     src="./images/walrus.jpg"
                     alt="Walrus"
                   />
-                  <h3 class="formats-title">Walrus</h3>
-                  <div class="formats-text">
+                  <h3 class="formats-card__title">Walrus</h3>
+                  <div class="formats-card__text">
                     <p>Area: up to 120 m2</p>
                     <p>Menu: expanded menu</p>
                     <p>
@@ -164,12 +164,12 @@
               <li class="formats-section__item">
                 <article class="formats-card">
                   <img
-                    class="formats-image"
+                    class="formats-card__image"
                     src="./images/horseshoe.jpg"
                     alt="Horseshoe"
                   />
-                  <h3 class="formats-title">Horseshoe</h3>
-                  <div class="formats-text">
+                  <h3 class="formats-card__title">Horseshoe</h3>
+                  <div class="formats-card__text">
                     <p>Area: up to 25 m2</p>
                     <p>Menu: the most popular menu items</p>
                     <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
@@ -180,12 +180,12 @@
               <li class="formats-section__item">
                 <article class="formats-card">
                   <img
-                    class="formats-image"
+                    class="formats-card__image"
                     src="./images/handlebar.jpg"
                     alt="Handlebar"
                   />
-                  <h3 class="formats-title">Handlebar</h3>
-                  <div class="formats-text">
+                  <h3 class="formats-card__title">Handlebar</h3>
+                  <div class="formats-card__text">
                     <p>Area: up to 15 m2</p>
                     <p>Menu: most popular menu items</p>
                     <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
@@ -204,21 +204,21 @@
       </section>
       <section class="section contacts-section" id="contacts-section">
         <div class="container">
-          <div class="contacts-container">
-            <div class="contacts-form">
-              <h2 class="contacts-title section-title">
+          <div class="contacts-section__container">
+            <div class="contacts-section__form">
+              <h2 class="contacts-section__title section-title">
                 Join the network of bakeries
               </h2>
               <p class="accent-brand-dark">
                 Fill out the form so we can contact you!
               </p>
               <form name="contacts-form" autocomplete="off">
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="uer-name">
+                <div class="contacts-section__form-field input">
+                  <label class="input__label visually-hidden" for="uer-name">
                     Name
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     id="uer-name"
                     name="uer-name"
@@ -226,12 +226,15 @@
                     required
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-tel">
+                <div class="contacts-section__form-field">
+                  <label
+                    class="input__label visually-hidden input"
+                    for="user-tel"
+                  >
                     Phone
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="tel"
                     id="user-tel"
                     name="user-tel"
@@ -240,12 +243,12 @@
                     pattern="^\+[0-9]{12}"
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-email">
+                <div class="contacts-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
                     Email
                   </label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="email"
                     id="user-email"
                     name="user-email"
@@ -253,12 +256,12 @@
                     required
                   />
                 </div>
-                <button type="submit" class="button form-button">
+                <button type="submit" class="contacts-section__button button">
                   Order a call
                 </button>
                 <p class="form-terms">
                   By clicking the button, I agree to
-                  <a class="form-terms-link" href="#">the privacy policy</a>
+                  <a class="form-terms__link" href="#">the privacy policy</a>
                 </p>
               </form>
             </div>
@@ -266,7 +269,7 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036099!2d30.488698375953092!3d50.456680986915906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1732383863583!5m2!1sru!2sua"
               width="600"
               height="600"
-              class="contacts-map"
+              class="contacts-section__map"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -340,16 +343,20 @@
 
     <div class="backdrop js-hidden">
       <div class="modal">
-        <button type="button" class="modal-btn-close">close</button>
+        <button type="button" class="modal__btn-close modal-btn-close">
+          close
+        </button>
         <h2>Order a call</h2>
-        <p>Leave a request and our specialist will contact you!</p>
+        <p class="accent-brand-dark">
+          Leave a request and our specialist will contact you!
+        </p>
         <form name="modal-form" autocomplete="off" novalidate>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="uer-name">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="uer-name">
               Name
             </label>
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               id="uer-name"
               name="uer-name"
@@ -357,12 +364,12 @@
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel">
               Phone
             </label>
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
@@ -371,12 +378,12 @@
               pattern="^\+[0-9]{12}"
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
               Email
             </label>
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               id="user-email"
               name="user-email"
@@ -384,10 +391,12 @@
               required
             />
           </div>
-          <button type="submit" class="button form-button">Order a call</button>
+          <button type="submit" class="button modal__button">
+            Order a call
+          </button>
           <p class="form-terms">
             By clicking the button, I agree to
-            <a class="form-terms-link" href="#">the privacy policy</a>
+            <a class="form-terms__link" href="#">the privacy policy</a>
           </p>
         </form>
       </div>
